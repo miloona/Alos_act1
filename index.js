@@ -5,7 +5,7 @@ function name_starts_with(client, letter) {
 }
 
 var req = unirest('GET', 'http://localhost:3000/client').headers({
-    "cache-control": "no-cache" //"response" peut ètre stocké dans le cache si validé par le serveur d'origine, mème si "response" est non-cache
+    "cache-control": "no-cache" //Q3:"response" peut ètre stocké dans le cache si validé par le serveur d'origine, mème si "response" est non-cache
 }).then((res) => {
     if (res.error) throw new Error(res.error)
     var first_10_client = res.body.slice(0, 10)
