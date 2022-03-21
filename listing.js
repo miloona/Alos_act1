@@ -1,7 +1,5 @@
-var listing_1 = { 
+var listing = { 
   'repeat(100)':{
-  JG.repeat(100,{
-  
    id: JG.objectId(),
   email() {
     return (
